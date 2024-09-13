@@ -41,6 +41,6 @@ def test_negative_solc_settings():
     command = f"python3 {MYTH} analyze {file_path} --solv 0.8.0"
     output = check_output(command, shell=True, stderr=STDOUT).decode("UTF-8")
     assert (
-        """ParserError: Source "@openzeppelin/contracts/token/PRC20/PRC20.sol"""
+        """ParserError: Source "@openzeppelin/contracts/token/PRC20/PRC20.sol""""
         in output
     )
